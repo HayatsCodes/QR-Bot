@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/HayatsCodes/discord-bot-qr_generator/issues"
   },
-  "homepage": "https://github.com/HayatsCodes/discord-bot-qr_generator#readme"
+  "homepage": "https://github.com/HayatsCodes/discord-bot-qr_generator#readme",
+  "devDependencies": {
+    "eslint": "^8.36.0"
+  }
 }
