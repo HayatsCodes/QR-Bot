@@ -27,6 +27,8 @@ for (const file of commandFiles) {
 
 client.on(Events.InteractionCreate, interaction => {
 	if (!interaction.isChatInputCommand()) return;
+
+    const command = interaction.client.commands
 	console.log(interaction);
 });
 
