@@ -25,6 +25,9 @@ for (const file of commandFiles) {
 	}
 }
 
-client.on(Events.InteractionCreate, interaction =<)
+client.on(Events.InteractionCreate, interaction => {
+    if (!interaction.is)
+	console.log(interaction);
+});
 
 client.login(token);
