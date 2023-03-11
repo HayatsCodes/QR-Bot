@@ -8,7 +8,6 @@ const execute = async function execute(interaction) {
 	await interaction.reply('Pong!');
 };
 
-con
 
 module.exports = {
 	data,
