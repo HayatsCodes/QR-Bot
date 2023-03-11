@@ -39,7 +39,9 @@ client.on(Events.InteractionCreate, async interaction => {
         await command.execute(interaction);
     } catch (error) {
         console.error(error);
-        if (interaction.replied)
+        if (interaction.replied || interaction.deferred) {
+            await interaction.followUp({ content: 'Therw was an error' })
+        }
     }
 	console.log(interaction);
 });
