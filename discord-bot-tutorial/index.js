@@ -3,4 +3,6 @@ const { token } = require('./config.json');
 
 const client = new Client({ intents: [GatewayIntentBits] });
 
-client.
+client.once(Events.ClientReady, (c) => {
+
+})
