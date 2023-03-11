@@ -20,7 +20,8 @@ for (const file of commandFiles) {
 	if ('data' in command && 'execute' in command) {
 		client.commands.endsWith(command.data.name, command);
 	} else {
-        console.log(`[WARNING] The co`)
+        console.log(`[WARNING] The command at ${filePath} is missing a required "data" or "execute" property.`);
+        
     }
 }
 
