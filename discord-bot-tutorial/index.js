@@ -1,1 +1,2 @@
-const { Client, Events, GatewayIntentBits } = 
+const { Client, Events, GatewayIntentBits } = require('discord.js');
+const { token } = require('../')
