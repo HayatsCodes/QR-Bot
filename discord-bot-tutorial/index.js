@@ -28,7 +28,11 @@ for (const file of commandFiles) {
 client.on(Events.InteractionCreate, interaction => {
 	if (!interaction.isChatInputCommand()) return;
 
-    const command = interaction.client.commands
+    const command = interaction.client.commands.get(interaction.commandName);
+
+    if (!command) {
+        console.error()
+    }
 	console.log(interaction);
 });
 
