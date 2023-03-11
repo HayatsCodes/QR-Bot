@@ -4,4 +4,4 @@ new SlashCommandBuilder()
 	.setName('ping')
 	.setDescription('Replies with pong');
 
-async 
+async execute
