@@ -7,3 +7,9 @@ const data = new SlashCommandBuilder()
 const execute = async function execute(interaction) {
 	await interaction.reply('Pong!');
 };
+
+
+module.exports = {
+	data,
+	execute,
+};
