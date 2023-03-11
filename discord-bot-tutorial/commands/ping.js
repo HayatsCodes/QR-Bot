@@ -1,9 +1,9 @@
 const { SlashCommandBuilder } = require('discord.js');
 
-new SlashCommandBuilder()
+const data = new SlashCommandBuilder()
 	.setName('ping')
 	.setDescription('Replies with pong');
 
-async function execute(interaction) {
-    await interaction.reply('pong');
-}
+const execute = async function execute(interaction) {
+	await interaction.reply('Pong!');
+};
