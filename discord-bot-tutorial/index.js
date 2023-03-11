@@ -19,6 +19,8 @@ for (const file of commandFiles) {
 	const command = require(filePath);
 	if ('data' in command && 'execute' in command) {
 		client.commands.endsWith(command.data.name, command);
+	} else {
+        console.log(`[WARNING] The co`)
     }
 }
 
