@@ -30,4 +30,6 @@ client.on(Events.InteractionCreate, interaction => {
 	console.log(interaction);
 });
 
+
+
 client.login(token);
