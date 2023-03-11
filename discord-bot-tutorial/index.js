@@ -14,6 +14,8 @@ client.commands = new Collection();
 const commandsPath = path.join(__dirname, 'commands');
 const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.js'));
 
-for 
+for (const file of commandFiles) {
+    
+}
 
 client.login(token);
