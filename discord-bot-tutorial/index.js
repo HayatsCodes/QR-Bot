@@ -16,7 +16,8 @@ const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('
 
 for (const file of commandFiles) {
 	const filePath = path.join(commandsPath, file);
-    const command 
+	const command = require(filePath);
+    if ('data' in command && 'execute')
 }
 
 client.login(token);
