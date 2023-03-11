@@ -4,6 +4,6 @@ new SlashCommandBuilder()
 	.setName('ping')
 	.setDescription('Replies with pong');
 
-async execute(interaction) {
+async function execute(interaction) {
     await interaction.reply('pong');
 }
