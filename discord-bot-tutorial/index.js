@@ -11,6 +11,7 @@ client.once(Events.ClientReady, c => {
 
 client.commands = new Collection();
 
-const commandsPath = path.join(__dirname, '')
+const commandsPath = path.join(__dirname, 'commands');
+const commandFiles = fs.
 
 client.login(token);
