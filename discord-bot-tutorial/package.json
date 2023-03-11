@@ -1,0 +1,26 @@
+{
+  "name": "discord-bot-qr_generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HayatsCodes/discord-bot-qr_generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HayatsCodes/discord-bot-qr_generator/issues"
+  },
+  "homepage": "https://github.com/HayatsCodes/discord-bot-qr_generator#readme",
+  "devDependencies": {
+    "eslint": "^8.36.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.7.1"
+  }
+}
