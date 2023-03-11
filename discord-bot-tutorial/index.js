@@ -31,7 +31,7 @@ client.on(Events.InteractionCreate, interaction => {
     const command = interaction.client.commands.get(interaction.commandName);
 
     if (!command) {
-        console.error()
+        console.error(`No command matching ${interaction.commandName} was found`)
     }
 	console.log(interaction);
 });
