@@ -25,6 +25,6 @@ for (const file of commandFiles) {
 	}
 }
 
-
+client.on(Events.InteractionCreate, interaction =<)
 
 client.login(token);
