@@ -1,1 +1,1 @@
-const { Client, Events, Gate }
+const { Client, Events, GatewayIntentBits }
