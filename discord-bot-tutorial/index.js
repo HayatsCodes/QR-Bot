@@ -1,3 +1,4 @@
+/* eslint-disable brace-style */
 const fs = require('fs');
 const path = require('path');
 const { Client, Events, GatewayIntentBits, Collection } = require('discord.js');
