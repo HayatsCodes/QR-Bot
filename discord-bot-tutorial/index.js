@@ -12,6 +12,6 @@ client.once(Events.ClientReady, c => {
 client.commands = new Collection();
 
 const commandsPath = path.join(__dirname, 'commands');
-const commandFiles = fs.
+const commandFiles = fs.readdirSync(commandsPath).filter(file =>)
 
 client.login(token);
