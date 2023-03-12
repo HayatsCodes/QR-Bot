@@ -9,7 +9,13 @@ const data = new SlashCommandBuilder()
 			.setDescription('The characters you want to embed in the QR code')
 			.setRequired(true);
 	});
+
 const execute = async function execute(interaction) {
 	const input = interaction.options.getString('input');
 	await interaction.reply(getQR(input));
+};
+
+module.exports = {
+	data,
+	execute,
 };
