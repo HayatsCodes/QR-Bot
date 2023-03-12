@@ -12,8 +12,8 @@ const data = new SlashCommandBuilder()
 
 const execute = async function execute(interaction) {
 	const input = interaction.options.getString('input');
-    
-	await interaction.deferReply(getQR(input));
+    const QRImage = await getQR(input);
+	await interaction.deferReply();
 };
 
 
