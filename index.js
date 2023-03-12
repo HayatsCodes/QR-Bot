@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { Client, Events, GatewayIntentBits, Collection } = require('discord.js');
+const { execute } = require('./commands/generate_qr');
 require('dotenv').config();
 
 const config = {
@@ -22,7 +23,8 @@ const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('
 
 for (const file of commandFiles) {
     const filePath = path.join(commandsPath, file);
-    
+    const command = require(filePath);
+    if ('data' in command && execute)
 }
 
 client.login(config.TOKEN);
