@@ -6,6 +6,7 @@ async function getQR(userInput) {
 		const response = await axios.get(`https://chart.googleapis.com/chart?cht=qr&chs=300x300&chl=${userInput}`, {
 			responseType: ArrayBuffer,
 		});
+
         
 		console.log(response.data);
 	} catch (error) {
