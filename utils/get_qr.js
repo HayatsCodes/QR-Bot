@@ -10,7 +10,8 @@ async function getQR(userInput) {
 		const imageData = Buffer.from(response.data, 'binary').toString('base64');
 		const imageUrl = `data:image/png;base64,${imageData}`;
 
-		console.log(response.data);
+		console.log(imageUrl);
+		return imageUrl;
 	} catch (error) {
 		console.log(error);
 	}
