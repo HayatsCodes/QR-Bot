@@ -16,7 +16,7 @@ async function getQR(userInput) {
         } else {
             console.log('QR code saved to qr-code.png');
         }
-    })
+    });
 }
 
 module.exports = getQR;
