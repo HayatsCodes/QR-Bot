@@ -16,6 +16,10 @@ const execute = async function execute(interaction) {
 	await interaction.editReply(getQR(input));
 };
 
+process.on('unhandledRejection', error => {
+	console.error('Unhandled promise rejection:', error);
+});
+
 module.exports = {
 	data,
 	execute,
