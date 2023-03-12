@@ -1,4 +1,4 @@
-const { SlashCommandBuilder, Attachment, EmbedBuilder } = require('discord.js');
+const { SlashCommandBuilder, AttachmentBuilder, EmbedBuilder } = require('discord.js');
 const QRGenerator = require('../utils/qr-generator');
 
 const data = new SlashCommandBuilder()
@@ -16,7 +16,7 @@ const execute = async function execute(interaction) {
 
 	await QRGenerator(input);
 
-	const file = new Attachment('qr-code.png');
+	const file = new AttachmentBuilder('qr-code.png');
 
 	const QREmbed = new EmbedBuilder()
 		.setTitle('QR Code')
