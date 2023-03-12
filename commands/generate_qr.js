@@ -14,14 +14,14 @@ const execute = async function execute(interaction) {
 	const input = interaction.options.getString('input');
 	console.log(`input: ${input}`);
 
-    await QRGenerator(input);
+	await QRGenerator(input);
 
-	const file = new AttachmentBuilder(QRFileName);
+	const file = new AttachmentBuilder('qr-code.png');
 
 	const QREmbed = new EmbedBuilder()
 		.setTitle('QR Code')
 		.setDescription(`QR code for '${input}'`)
-		.setImage(`attachment://${QRFileName}`);
+		.setImage('attachment://qr-code.png');
 	await interaction.reply({ embeds: [QREmbed], files: [file] });
 };
 
