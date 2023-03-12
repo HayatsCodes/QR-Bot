@@ -10,13 +10,14 @@ async function QRGenerator(userInput) {
 		},
 	};
 
-    QRCode.toFile('qr-code.png', QRData, QROptions, (err) => {
-        if (err) {
-            console.error(err);
-        } else {
-            console.log('QR code saved to qr-code.png');
-        }
-    });
+	QRCode.toFile('qr-code.png', QRData, QROptions, (err) => {
+		if (err) {
+			console.error(err);
+		}
+		else {
+			console.log('QR code saved to qr-code.png');
+		}
+	});
 }
 
 module.exports = QRGenerator;
