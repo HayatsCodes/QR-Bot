@@ -15,7 +15,7 @@ async function QRGenerator(userInput) {
 			console.error(err);
 		}
 		else {
-			console.log('QR code saved to qr-code.png');
+			console.log('QR code saved to ../qr-code.png');
 		}
 	});
 }
