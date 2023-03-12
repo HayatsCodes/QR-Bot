@@ -1,4 +1,3 @@
-const fs = require('fs');
 const axios = require('axios');
 
 async function getQR(userInput) {
@@ -7,15 +6,8 @@ async function getQR(userInput) {
 			responseType: ArrayBuffer,
 		});
 
-		const QRData = Buffer.from(response.data, 'binary').toString('base64');
 		// const QRImageUrl = `data:image/png;base64,${QRData}`;
 
-
-		QRData.forEach(buffer => {
-			writeStream.write(buffer);
-		});
-
-		writeStream.end();
 		// console.log(QRImageUrl);
 		// return QRImageUrl;
 	}
