@@ -21,7 +21,6 @@ const execute = async function execute(interaction) {
 	const QREmbed = new EmbedBuilder()
 		.setTitle('QR Code')
 		.setDescription(`QR code for '${input}'`)
-        .setColor(#FF0000)
 		.setImage('attachment://qr-code.png');
 	await interaction.deferReply();
 	await interaction.editReply({ embeds: [QREmbed], files: [file] });
