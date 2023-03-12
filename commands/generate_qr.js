@@ -19,7 +19,7 @@ const execute = async function execute(interaction) {
 	const QREmbed = new EmbedBuilder()
 		.setTitle('QR Code')
 		.setDescription(`QR code for '${input}'`)
-		.setThumbnail(QRImageUrl);
+		.setImage(``);
 	await interaction.reply({ embeds: [QREmbed] });
 };
 
