@@ -1,4 +1,4 @@
-const { SlashCommandBuilder, MessageEmbed } = require('discord.js');
+const { SlashCommandBuilder, E } = require('discord.js');
 const getQR = require('../utils/get_qr');
 
 const data = new SlashCommandBuilder()
@@ -14,7 +14,7 @@ const execute = async function execute(interaction) {
 	const input = interaction.options.getString('input');
 	const QRImageUrl = await getQR(input);
 
-    const embed = new messageEm
+    const embed = new MessageEmbed()
 	await interaction.deferReply();
 };
 
