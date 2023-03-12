@@ -1,6 +1,6 @@
 const QRCode = require('qrcode');
 
-async function getQR(userInput) {
+async function QRGenerator(userInput) {
 	const QRData = userInput;
 	const QROptions = {
 		errorCorrectionLevel: 'H',
@@ -19,4 +19,4 @@ async function getQR(userInput) {
     });
 }
 
-module.exports = getQR;
+module.exports = QRGenerator;
