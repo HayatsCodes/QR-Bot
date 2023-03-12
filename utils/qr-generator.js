@@ -10,16 +10,16 @@ async function QRGenerator(userInput) {
 		},
 	};
 
-	await QRCode.toFile('qr-code.png', QRData, QROptions, (err) => {
+	const wait = await QRCode.toFile('qr-code.png', QRData, QROptions, (err) => {
 		if (err) {
 			console.error(err);
 		}
 		else {
 			console.log('QR code saved to qr-code.png');
 		}
-		return 'qr-code.png';
-
 	});
+	console.log(wait);
+	return 'qr-code.png';
 }
 
 module.exports = QRGenerator;
