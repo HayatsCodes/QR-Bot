@@ -14,7 +14,7 @@ const execute = async function execute(interaction) {
 	const input = interaction.options.getString('input');
 	console.log(`input: ${input}`);
 	await getQR(input);
-	const QRImageUrl = new AttachmentBuilder('./image.png');
+	const QRImageUrl = new AttachmentBuilder('./qr_image.png');
 
 	const QREmbed = new EmbedBuilder()
 		.setTitle('QR Code')
