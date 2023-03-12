@@ -12,6 +12,7 @@ async function QRGenerator(userInput) {
 			dark: '#FF0000',
 			light: '#00FF00',
 		},
+		
 	};
 
 	await QRCode.toFile('qr-code.png', QRData, QROptions, (err) => {
