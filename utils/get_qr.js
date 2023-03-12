@@ -10,7 +10,13 @@ async function getQR(userInput) {
 		},
 	};
 
-    QRCode.toFile('qr-code.png', QRData, QROptions)
+    QRCode.toFile('qr-code.png', QRData, QROptions, (err) => {
+        if (err) {
+            console.error(err);
+        } else {
+            console.log('QR code saved to qr-code.png');
+        }
+    })
 }
 
 module.exports = getQR;
