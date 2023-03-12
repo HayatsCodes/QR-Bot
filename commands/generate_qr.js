@@ -19,7 +19,7 @@ const data = new SlashCommandBuilder()
 				{ name: 'Green', value: '#00FF00' },
 				{ name: 'Blue', value: '#0000FF' },
 				{ name: 'Yellow', value: '#FFFF00' },
-			);
+			)
 	});
 
 const execute = async function execute(interaction) {
