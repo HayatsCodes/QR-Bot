@@ -3,9 +3,8 @@ const axios = require('axios');
 
 async function getQR(userInput) {
 	try {
-		const response = await axios.get(`https://chart.googleapis.com/chart?cht=qr&chs=300x300&chl=${userInput}`, {
-			responseType: ArrayBuffer,
-		});
+		const response = await axios.get(`https://chart.googleapis.com/chart?cht=qr&chs=300x300&chl=${userInput}`);
+        const QRData
 
 		// const QRImageUrl = `data:image/png;base64,${QRData}`;
 
