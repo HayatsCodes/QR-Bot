@@ -32,7 +32,9 @@ for (const file of commandFiles) {
 }
 
 client.on(Events.InteractionCreate, async interaction => {
-    if
+    if (!interaction.isChatInputCommand()) return;
+
+    const command = interaction.
 })
 
 client.login(config.TOKEN);
