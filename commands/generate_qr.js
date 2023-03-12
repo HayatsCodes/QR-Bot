@@ -15,7 +15,9 @@ const data = new SlashCommandBuilder()
         .addChoices(
             { name: 'White', value: '#FFFFFF'},
             { name: 'Black', value: '#000000'},
-            { name: 'Red', value: '#000000'},
+            { name: 'Red', value: '#FF0000'},
+            { name: 'Green', value: '#00FF00'},
+            { name: 'Green', value: '#00FF00'},
         )
     });
 
