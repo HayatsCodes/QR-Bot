@@ -12,11 +12,12 @@ const data = new SlashCommandBuilder()
 
 const execute = async function execute(interaction) {
 	const input = interaction.options.getString('input');
+    console.log(`input: ${input}`);
 	const QRImageUrl = await getQR(input);
 
     const QREmbed = new EmbedBuilder()
                     .setTitle('QR Code')
-                    .setDescription(`QR code for ${input}`)
+                    .setDescription(`QR code for '${input}`)
 	await interaction.deferReply();
 };
 
