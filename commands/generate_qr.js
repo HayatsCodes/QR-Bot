@@ -22,11 +22,11 @@ const data = new SlashCommandBuilder()
 			);
 	})
 	.addStringOption(option => {
-		return option.setName('Background-Color')
-			.setDescription('Background color of choice')
+		return option.setName('Foreground-Color')
+			.setDescription('Foreground color of choice')
 			.addChoices(
-				{ name: 'White', value: '#FFFFFF' },
 				{ name: 'Black', value: '#000000' },
+				{ name: 'White', value: '#FFFFFF' },
 				{ name: 'Red', value: '#FF0000' },
 				{ name: 'Green', value: '#00FF00' },
 				{ name: 'Blue', value: '#0000FF' },
