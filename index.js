@@ -31,4 +31,6 @@ for (const file of commandFiles) {
 	}
 }
 
+
+
 client.login(config.TOKEN);
