@@ -36,7 +36,6 @@ const data = new SlashCommandBuilder()
 
 const execute = async function execute(interaction) {
 	const input = interaction.options.getString('input');
-    
 	await QRGenerator(input);
 
 	const file = new AttachmentBuilder('qr-code.png');
