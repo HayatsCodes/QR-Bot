@@ -5,7 +5,7 @@ const data = new SlashCommandBuilder()
 	.setName('generate')
 	.setDescription('generates qr code')
 	.addStringOption(option => {
-		option.setName('input')
+		return option.setName('input')
 			.setDescription('The characters you want to embed in the QR code')
 			.setRequired(true);
 	});
