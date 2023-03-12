@@ -8,12 +8,15 @@ async function getQR(userInput) {
 		});
 
 		const QRData = Buffer.from(response.data, 'binary').toString('base64');
-		const QRImageUrl = `data:image/png;base64,${QRData}`;
+		// const QRImageUrl = `data:image/png;base64,${QRData}`;
 
 		const writeStream = fs.createWriteStream('qr_image.png');
 
-		console.log(QRImageUrl);
-		return QRImageUrl;
+        bufferArray.forEach(buffer => {
+            writeStream.write(buffer);
+          });
+		// console.log(QRImageUrl);
+		// return QRImageUrl;
 	} catch (error) {
 		console.log(error);
 	}
