@@ -1,4 +1,4 @@
-
+const fs = require('fs');
 const { SlashCommandBuilder, AttachmentBuilder, EmbedBuilder } = require('discord.js');
 const getQR = require('../utils/get_qr');
 
