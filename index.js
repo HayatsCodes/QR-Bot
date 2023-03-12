@@ -1,5 +1,5 @@
 const fs = require('fs');
-
+const path = require('path');
 const { Client, Events, GatewayIntentBits, Collection } = require('discord.js');
 require('dotenv').config();
 
@@ -17,6 +17,7 @@ client.once(Events.ClientReady, (c) => {
 
 client.commands = new Collection();
 
-const commandsPath = 
+const commandsPath = path.join(__dirname, 'commands');
+const command
 
 client.login(config.TOKEN);
