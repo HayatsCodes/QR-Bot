@@ -10,7 +10,7 @@ async function QRGenerator(userInput) {
 		},
 	};
 
-	await QRCode.toFile('./qr-code.png', QRData, QROptions, (err) => {
+	await QRCode.toFile('qr-code.png', QRData, QROptions, (err) => {
 		if (err) {
 			console.error(err);
 		}
