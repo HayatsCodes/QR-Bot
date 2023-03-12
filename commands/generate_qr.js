@@ -10,7 +10,8 @@ const data = new SlashCommandBuilder()
 			.setRequired(true);
 	})
     .addStringOption(option => {
-        return option.set
+        return option.setName('Background-Color')
+        .setDescription('')
     });
 
 const execute = async function execute(interaction) {
