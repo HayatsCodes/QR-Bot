@@ -10,7 +10,7 @@ const data = new SlashCommandBuilder()
 			.setRequired(true);
 	})
 	.addStringOption(option => {
-		return option.setName('Background-Color')
+		return option.setName('background-color')
 			.setDescription('Background color of choice')
 			.addChoices(
 				{ name: 'White', value: '#FFFFFF' },
@@ -22,7 +22,7 @@ const data = new SlashCommandBuilder()
 			);
 	})
 	.addStringOption(option => {
-		return option.setName('Foreground-Color')
+		return option.setName('foreground-color')
 			.setDescription('Foreground color of choice')
 			.addChoices(
 				{ name: 'Black', value: '#000000' },
@@ -36,6 +36,7 @@ const data = new SlashCommandBuilder()
 
 const execute = async function execute(interaction) {
 	const input = interaction.options.getString('input');
+    const backgroundColor = interaction.getString('')
 	await QRGenerator(input);
 
 	const file = new AttachmentBuilder('qr-code.png');
