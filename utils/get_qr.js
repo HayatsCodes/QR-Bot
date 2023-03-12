@@ -12,12 +12,15 @@ async function getQR(userInput) {
 
 		const writeStream = fs.createWriteStream('qr_image.png');
 
-        bufferArray.forEach(buffer => {
-            writeStream.write(buffer);
-          });
+		QRData.forEach(buffer => {
+			writeStream.write(buffer);
+		});
+
+		writeStream.end();
 		// console.log(QRImageUrl);
 		// return QRImageUrl;
-	} catch (error) {
+	}
+	catch (error) {
 		console.log(error);
 	}
 }
