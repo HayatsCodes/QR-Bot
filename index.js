@@ -1,7 +1,7 @@
 /* eslint-disable brace-style */
 const fs = require('fs');
 const path = require('path');
-const { Client, Events, GatewayIntentBits, Collection } = require('discord.js');
+const { Client, Events, GatewayIntentBits, Collection, Events } = require('discord.js');
 require('dotenv').config();
 
 const config = {
@@ -31,6 +31,8 @@ for (const file of commandFiles) {
 	}
 }
 
-
+client.on(Events.InteractionCreate, async interaction => {
+    if
+})
 
 client.login(config.TOKEN);
