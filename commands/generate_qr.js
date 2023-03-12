@@ -1,4 +1,4 @@
-const { SlashCommandBuilder, AttachmentBuilder } = require('discord.js');
+const { SlashCommandBuilder, AttachmentBuilder, EmbedBuilder } = require('discord.js');
 const QRGenerator = require('../utils/qr-generator');
 
 const data = new SlashCommandBuilder()
@@ -18,10 +18,11 @@ const execute = async function execute(interaction) {
 
 	const file = new AttachmentBuilder('./qr-code.png');
 
-	// const QREmbed = new EmbedBuilder()
-	// 	.setTitle('QR Code')
-	// 	.setDescription(`QR code for '${input}'`)
-	// 	.setImage('attachment://qr_image.png');
+	const QREmbed = new EmbedBuilder()
+		.setTitle('QR Code')
+		.setDescription(`QR code for '${input}'`)
+		.setImage('attachment://qr-code.png');
+
 };
 
 
