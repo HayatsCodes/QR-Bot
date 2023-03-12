@@ -1,3 +1,4 @@
+const qrcode = require('qrcode');
 const axios = require('axios');
 
 async function getQR(userInput) {
