@@ -16,12 +16,12 @@ const execute = async function execute(interaction) {
 
 	await QRGenerator(input);
 
-	const file = new AttachmentBuilder('qr-code.png');
+	const file = new AttachmentBuilder('qr-code-1.png');
 
 	const QREmbed = new EmbedBuilder()
 		.setTitle('QR Code')
 		.setDescription(`QR code for '${input}'`)
-		.setImage('attachment://qr-code.png');
+		.setImage('attachment://qr-code-1.png');
 	await interaction.reply({ embeds: [QREmbed], files: [file] });
 };
 
