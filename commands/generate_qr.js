@@ -1,4 +1,5 @@
 const { SlashCommandBuilder } = require('discord.js');
+const getQR = require()
 
 const data = new SlashCommandBuilder()
 	.setName('generate')
@@ -10,5 +11,5 @@ const data = new SlashCommandBuilder()
 	});
 const execute = async function execute(interaction) {
 	const input = interaction.options.getString('input');
-    
+    await interaction.reply(``)
 };
