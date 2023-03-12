@@ -6,7 +6,7 @@ async function QRGenerator(userInput) {
 		errorCorrectionLevel: 'H',
 		type: 'png',
 		rendererOpts: {
-			quality: 0.3,
+			quality: 1,
 		},
 	};
 
