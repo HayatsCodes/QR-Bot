@@ -34,7 +34,7 @@ for (const file of commandFiles) {
 client.on(Events.InteractionCreate, async interaction => {
     if (!interaction.isChatInputCommand()) return;
 
-    const command = interaction.
+    const command = interaction.client.commands.get(interaction.commandName);
 })
 
 client.login(config.TOKEN);
