@@ -1,7 +1,7 @@
-const {Client, Events, GatewayIntentBits } = require('discord.js');
+const { Client, Events, GatewayIntentBits } = require('discord.js');
 
 const client = new Client({ intents: GatewayIntentBits.Guilds });
 
-client.once(Events.ClientReady, () => {
-    console.log(`Ready!`);
+client.once(Events.ClientReady, (c) => {
+	console.log(`Ready! Logged in as ${c.user.tag}`);
 });
