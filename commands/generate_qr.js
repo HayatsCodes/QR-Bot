@@ -11,7 +11,10 @@ const data = new SlashCommandBuilder()
 	})
     .addStringOption(option => {
         return option.setName('Background-Color')
-        .setDescription('')
+        .setDescription('Background color of choice')
+        .addChoices(
+            
+        )
     });
 
 const execute = async function execute(interaction) {
