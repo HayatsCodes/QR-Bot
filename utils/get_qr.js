@@ -10,7 +10,6 @@ async function getQR(userInput) {
 		const QRData = Buffer.from(response.data, 'binary').toString('base64');
 		// const QRImageUrl = `data:image/png;base64,${QRData}`;
 
-		const writeStream = fs.createWriteStream('qr_image.png');
 
 		QRData.forEach(buffer => {
 			writeStream.write(buffer);
