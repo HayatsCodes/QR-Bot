@@ -9,7 +9,8 @@ async function QRGenerator(userInput) {
 			quality: 1,
 		},
 		color: {
-			da
+			dark: '#FF0000',
+			light: '',
 		}
 	};
 
