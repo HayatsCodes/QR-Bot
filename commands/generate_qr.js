@@ -13,8 +13,8 @@ const data = new SlashCommandBuilder()
 const execute = async function execute(interaction) {
 	const input = interaction.options.getString('input');
 	console.log(`input: ${input}`);
-    const 
-	const QRImageUrl = await new AttachmentBuilder(getQR(input));
+	const QRImage = await getQR(input);
+	const QRImageUrl = await new AttachmentBuilder(QRImage);
 
 	const QREmbed = new EmbedBuilder()
 		.setTitle('QR Code')
