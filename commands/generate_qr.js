@@ -16,7 +16,7 @@ const execute = async function execute(interaction) {
 
 	await QRGenerator(input);
 
-    const file = new AttachmentBuilder('./')
+	const file = new AttachmentBuilder('./qr-code.png');
 
 	// const QREmbed = new EmbedBuilder()
 	// 	.setTitle('QR Code')
