@@ -13,7 +13,9 @@ const data = new SlashCommandBuilder()
         return option.setName('Background-Color')
         .setDescription('Background color of choice')
         .addChoices(
-            { name: 'White', value: ''}
+            { name: 'White', value: '#FFFFFF'},
+            { name: 'Black', value: '#000000'},
+            { name: 'Red', value: '#000000'},
         )
     });
 
