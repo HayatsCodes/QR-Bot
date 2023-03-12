@@ -8,7 +8,10 @@ const data = new SlashCommandBuilder()
 		return option.setName('input')
 			.setDescription('The characters you want to embed in the QR code')
 			.setRequired(true);
-	});
+	})
+    .addStringOption(option => {
+        return option.set
+    });
 
 const execute = async function execute(interaction) {
 	const input = interaction.options.getString('input');
