@@ -1,6 +1,6 @@
 const QRCode = require('qrcode');
 
-function QRGenerator(userInput) {
+async function QRGenerator(userInput) {
 	const QRData = userInput;
 	const QROptions = {
 		errorCorrectionLevel: 'H',
@@ -10,7 +10,7 @@ function QRGenerator(userInput) {
 		},
 	};
 
-	QRCode.toFile('qr-code.png', QRData, QROptions, (err) => {
+	await QRCode.toFile('qr-code.png', QRData, QROptions, (err) => {
 		if (err) {
 			console.error(err);
 		}
