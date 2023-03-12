@@ -32,7 +32,7 @@ const data = new SlashCommandBuilder()
 				{ name: 'Blue', value: '#0000FF' },
 				{ name: 'Yellow', value: '#FFFF00' },
 			);
-	})
+	});
 
 const execute = async function execute(interaction) {
 	const input = interaction.options.getString('input');
