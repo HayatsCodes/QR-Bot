@@ -8,6 +8,7 @@ async function QRGenerator(userInput) {
 		rendererOpts: {
 			quality: 1,
 		},
+		
 	};
 
 	await QRCode.toFile('qr-code.png', QRData, QROptions, (err) => {
