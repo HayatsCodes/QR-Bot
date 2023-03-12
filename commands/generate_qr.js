@@ -13,7 +13,7 @@ const data = new SlashCommandBuilder()
         return option.setName('Background-Color')
         .setDescription('Background color of choice')
         .addChoices(
-            
+            { name: 'White', value: ''}
         )
     });
 
