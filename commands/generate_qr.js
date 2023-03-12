@@ -14,7 +14,7 @@ const execute = async function execute(interaction) {
 	const input = interaction.options.getString('input');
 	console.log(`input: ${input}`);
 
-	await QRGenerator(input);
+	// await QRGenerator(input);
 
 	const file = new AttachmentBuilder('qr-code.png');
 
