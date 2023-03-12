@@ -18,6 +18,6 @@ client.once(Events.ClientReady, (c) => {
 client.commands = new Collection();
 
 const commandsPath = path.join(__dirname, 'commands');
-const command
+const commandFiles = fs.readdirSync()
 
 client.login(config.TOKEN);
