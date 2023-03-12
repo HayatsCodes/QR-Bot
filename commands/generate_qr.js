@@ -13,7 +13,7 @@ const data = new SlashCommandBuilder()
 const execute = async function execute(interaction) {
 	const input = interaction.options.getString('input');
 	await interaction.deferReply();
-	await interaction.reply(getQR(input));
+	await interaction.editReply(getQR(input));
 };
 
 module.exports = {
