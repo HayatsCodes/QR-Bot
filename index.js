@@ -1,3 +1,7 @@
 const {Client, Events, GatewayIntentBits } = require('discord.js');
 
-client = new Client({ intents: GatewayIntentBits.Guilds });
+const client = new Client({ intents: GatewayIntentBits.Guilds });
+
+client.once(Events.ClientReady, () => {
+
+});
