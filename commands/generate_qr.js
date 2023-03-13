@@ -36,7 +36,7 @@ const data = new SlashCommandBuilder()
 
 const execute = async function execute(interaction) {
 	const input = interaction.options.getString('input');
-	const backgroundColor = interaction.getString('background-color') ?? '#FFFFFF';
+	const backgroundColor = interaction.options.getString('background-color') ?? '#FFFFFF';
 	const foregroundColor = interaction.getString('foreground-color') ?? '#000000';
 	await QRGenerator(input, backgroundColor, foregroundColor);
 
