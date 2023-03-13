@@ -10,9 +10,10 @@ const config = {
 	CLIENT_ID: process.env.CLIENT_ID,
 };
 
-
 // Instantiate a new Client instance
 const client = new Client({ intents: GatewayIntentBits.Guilds });
+
+console.log('client ', client);
 
 // Fire the event when logged in to discord successfully
 client.once(Events.ClientReady, (c) => {
