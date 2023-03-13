@@ -1,4 +1,3 @@
-/* eslint-disable no-mixed-spaces-and-tabs */
 /* eslint-disable brace-style */
 const { REST, Routes } = require('discord.js');
 const fs = require('fs');
@@ -23,24 +22,18 @@ const rest = new REST({ version: '10' }).setToken(config.TOKEN);
 // and deploy your commands!
 (async () => {
 	try {
-	  console.log(`Started refreshing ${commands.length} application (/) commands.`);
+		console.log(`Started refreshing ${commands.length} application (/) commands.`);
 
-	  // The put method is used to fully refresh all commands in the guild with the current set
-	  const data = await rest.put(
+		// The put method is used to fully refresh all commands in the guild with the current set
+		const data = await rest.put(
 			Routes.applicationGuildCommands(config.CLIENT_ID, config.GUILD_ID),
 			{ body: commands },
-	  );
+		);
 
-	  console.log(`Successfully reloaded ${data.length} application (/) commands.`);
+		console.log(`Successfully reloaded ${data.length} application (/) commands.`);
 	} catch (error) {
-	  // And of course, make sure you catch and log any errors!
-	  console.error(error);
+		// And of course, make sure you catch and log any errors!
+		console.error(error);
 	}
-})();
-
-// Stop the IIFE after 30 seconds
-setTimeout(() => {
 	return;
-}, 30000);
-//   The setTimeout function takes two arguments: a callback function to be executed after the specified delay (in milliseconds), and the delay itself. In this case, the callback function simply returns, which stops the IIFE from executing any further. The delay is set to 30,000 milliseconds (i.e., 30 seconds).
-
+})();
