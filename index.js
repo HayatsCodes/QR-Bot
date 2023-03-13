@@ -58,7 +58,6 @@ client.on(Events.InteractionCreate, async interaction => {
 			await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
 		}
 	}
-	console.log(interaction);
 });
 
 client.login(config.TOKEN);
