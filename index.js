@@ -10,6 +10,7 @@ const config = {
 	CLIENT_ID: process.env.CLIENT_ID,
 };
 
+
 // Instantiate a new Client instance
 const client = new Client({ intents: GatewayIntentBits.Guilds });
 
