@@ -36,6 +36,7 @@ for (const file of commandFiles) {
 	}
 }
 
+// Fire the event when user interacts with the bot
 client.on(Events.InteractionCreate, async interaction => {
 	if (!interaction.isChatInputCommand()) return;
 
