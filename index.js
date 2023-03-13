@@ -19,7 +19,7 @@ client.once(Events.ClientReady, (c) => {
 	console.log(`Ready! Logged in as ${c.user.tag}`);
 });
 
-// Create a 
+// Create a collection of commands
 client.commands = new Collection();
 
 const commandsPath = path.join(__dirname, 'commands');
