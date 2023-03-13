@@ -11,6 +11,7 @@ const config = {
 	GUILD_ID: process.env.GUILD_ID,
 };
 
+// Instantiate a new Client instance
 const client = new Client({ intents: GatewayIntentBits.Guilds });
 
 client.once(Events.ClientReady, (c) => {
@@ -21,6 +22,7 @@ client.commands = new Collection();
 
 const commandsPath = path.join(__dirname, 'commands');
 const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.js'));
+
 
 for (const file of commandFiles) {
 	const filePath = path.join(commandsPath, file);
