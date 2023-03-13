@@ -1,3 +1,4 @@
+/* eslint-disable no-mixed-spaces-and-tabs */
 /* eslint-disable brace-style */
 const { REST, Routes } = require('discord.js');
 const fs = require('fs');
