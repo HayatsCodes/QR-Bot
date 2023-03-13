@@ -29,8 +29,8 @@ const rest = new REST({ version: '10' }).setToken(config.TOKEN);
 			Routes.applicationGuildCommands(config.CLIENT_ID, config.GUILD_ID),
 			{ body: commands },
 		);
-
 		console.log(`Successfully reloaded ${data.length} application (/) commands.`);
+		return;
 	} catch (error) {
 		// And of course, make sure you catch and log any errors!
 		console.error(error);
