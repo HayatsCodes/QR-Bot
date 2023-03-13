@@ -37,7 +37,7 @@ const data = new SlashCommandBuilder()
 const execute = async function execute(interaction) {
 	const input = interaction.options.getString('input');
 	const backgroundColor = interaction.options.getString('background-color') ?? '#FFFFFF';
-	const foregroundColor = interaction.getString('foreground-color') ?? '#000000';
+	const foregroundColor = interaction.options.getString('foreground-color') ?? '#000000';
 	await QRGenerator(input, backgroundColor, foregroundColor);
 
 	const file = new AttachmentBuilder('qr-code.png');
