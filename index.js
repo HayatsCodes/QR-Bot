@@ -17,6 +17,7 @@ const client = new Client({ intents: GatewayIntentBits.Guilds });
 // Fire the event when logged in to discord successfully
 client.once(Events.ClientReady, (c) => {
 	console.log(`Ready! Logged in as ${c.user.tag}`);
+	retu
 });
 
 // Create a collection of commands
