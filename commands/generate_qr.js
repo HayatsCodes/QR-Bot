@@ -1,7 +1,7 @@
 const { SlashCommandBuilder, AttachmentBuilder, EmbedBuilder } = require('discord.js');
 const QRGenerator = require('../utils/qr-generator');
 
-
+// Instantiate a slash command for the bot
 const data = new SlashCommandBuilder()
 	.setName('generate')
 	.setDescription('generates qr code')
@@ -35,6 +35,7 @@ const data = new SlashCommandBuilder()
 			);
 	});
 
+// 
 const execute = async function execute(interaction) {
 	const input = interaction.options.getString('input');
 	const backgroundColor = interaction.options.getString('background-color') ?? '#FFFFFF';
