@@ -14,7 +14,7 @@ const config = {
 // Instantiate a new Client instance
 const client = new Client({ intents: GatewayIntentBits.Guilds });
 
-// Fire the Events.ClientReady event when sucessfully
+// Fire the event when logged in to discord successfully
 client.once(Events.ClientReady, (c) => {
 	console.log(`Ready! Logged in as ${c.user.tag}`);
 });
