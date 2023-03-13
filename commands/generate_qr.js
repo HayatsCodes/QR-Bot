@@ -50,7 +50,7 @@ const execute = async function execute(interaction) {
 		.setImage('attachment://qr-code.png');
 	// Defer reply until the qr-code image is ready
 	await interaction.deferReply();
-	// Edit the reply with the qr 
+	// Now edit the reply with the qr-code image
 	await interaction.editReply({ embeds: [QREmbed], files: [file] });
 };
 
