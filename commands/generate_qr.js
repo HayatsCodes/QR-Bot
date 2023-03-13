@@ -1,6 +1,7 @@
 const { SlashCommandBuilder, AttachmentBuilder, EmbedBuilder } = require('discord.js');
 const QRGenerator = require('../utils/qr-generator');
 
+
 const data = new SlashCommandBuilder()
 	.setName('generate')
 	.setDescription('generates qr code')
