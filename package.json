@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index",
-    "build": "node deploy-command",
+    "deploy-command": "node deploy-command",
     "test": "echo 'no test'"
   },
   "repository": {
