@@ -14,6 +14,7 @@ const config = {
 // Instantiate a new Client instance
 const client = new Client({ intents: GatewayIntentBits.Guilds });
 
+
 client.once(Events.ClientReady, (c) => {
 	console.log(`Ready! Logged in as ${c.user.tag}`);
 });
