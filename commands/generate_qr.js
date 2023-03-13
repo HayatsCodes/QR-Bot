@@ -35,7 +35,7 @@ const data = new SlashCommandBuilder()
 			);
 	});
 
-// 
+// Exexcuting the slash command
 const execute = async function execute(interaction) {
 	const input = interaction.options.getString('input');
 	const backgroundColor = interaction.options.getString('background-color') ?? '#FFFFFF';
@@ -48,6 +48,7 @@ const execute = async function execute(interaction) {
 		.setTitle('QR Code')
 		.setDescription(`QR code for '${input}'`)
 		.setImage('attachment://qr-code.png');
+	// 
 	await interaction.deferReply();
 	await interaction.editReply({ embeds: [QREmbed], files: [file] });
 };
