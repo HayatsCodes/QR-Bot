@@ -1,7 +1,15 @@
 # QR Generator Discord Bot (QR-BOT)
 A Discord bot that generates preffered color QR codes for text and URLs.
 
-## Requirements
+## Requirements 
+Discord User:
+
+- Have an active discord account
+- Join this [discord server](https://discord.gg/e5u7wujE) to use the bot.
+- Click [here](#usage) for usage instructions
+
+Discord Server:
+
 - Have an active discord account
 - Be the owner of a discord [server](https://support.discord.com/hc/en-us/articles/204849977-How-do-I-create-a-server-) or have a "Manage Server" permission on a server.
 
