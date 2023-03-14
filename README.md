@@ -1,7 +1,8 @@
 # QR Generator Discord Bot (QR-BOT)
 A Discord bot that generates preffered color QR codes for text and URLs.
 
-
+## Architecture
+The bot was built using the discord.js library while 
 
 ## Requirements 
 Discord User:
