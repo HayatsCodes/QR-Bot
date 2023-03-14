@@ -34,6 +34,7 @@ The bot responds to the following commands:
 - `/generate input[<text>]`: Generates a QR code for the specified text/URL.
 
 Example:
+
 `/generate input[Hello world]`: Generates a QR code for the text hello world.
 
 `/generate input[github.com]`: Generates a QR code for github.com URL.
@@ -50,6 +51,7 @@ Example:
 6. Blue
 
 Example:
+
 `/generate input[github.com]  background-color[Red] foreground-color[Green]`
 
 ## Contributing
