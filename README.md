@@ -63,4 +63,4 @@ If you would like to contribute to this project, feel free to open an issue or s
 ## Acknowledgments
 - This bot was built using the discord.js library.
 - QR code generation is powered by the qrcode npm package.
-- The bot is hosted on Railway
+- The bot is hosted on [Railway](https://railway.app/)
