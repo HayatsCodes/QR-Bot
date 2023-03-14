@@ -24,20 +24,15 @@ To add the bot to a server follow this steps:
 ## Usage
 The bot responds to the following commands:
 - `/generate input[<text>]`: Generates a QR code for the specified text/URL.
+
 Example:
-`/generate input[Hello world]`
+`/generate input[Hello world]`: Generates a QR code for the text hello world.
 
-Generates a QR code for the text hello world.
-
-`/generate input[github.com]`
-
-Generates a QR code for github.com URL.
+`/generate input[github.com]`: Generates a QR code for github.com URL.
 
 
 ### Optional commands
-`/generate input[<text>] background-color[<color>] foreground-color[<color>]` 
-
-Generates a QR code for the specified text/URL with the option to specify a background/foreground color. The color can be one of the following:
+`/generate input[<text>] background-color[<color>] foreground-color[<color>]`: Generates a QR code for the specified text/URL with the option to specify a background/foreground color. The color can be one of the following:
 
 1. White
 2. Black
