@@ -4,6 +4,8 @@ A Discord bot that generates preffered color QR codes for text and URLs.
 ## Architecture
 The bot was built using the [discord.js](https://discord.js.org/#/) library while the [qrcode](https://www.npmjs.com/package/qrcode) npm package was used to generate the qr code.
 
+
+
 ## Requirements 
 Discord User:
 
@@ -26,11 +28,11 @@ To add the bot to a server follow this steps:
 - Choose the server you want to add it to and click "Authorize"
 - This should then present you a nice confirmation message:
 
-![Bot permmission](/assets/images/bot-authorized.png)
+![Bot Authorized](/assets/images/bot-authorized.png)
 
 - Congratulations! You've successfully added QR-BOT to your Discord server. It should show up in your server's member list somewhat like this:
 
-![Bot permmission](/assets/images/bot-added.jpg)
+![Bot Added](/assets/images/bot-added.jpg)
 
 ## Usage
 The bot responds to the following commands:
