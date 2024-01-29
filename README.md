@@ -10,7 +10,7 @@ The bot was built using the [discord.js](https://discord.js.org/#/) library whil
 Discord User:
 
 - Have an active discord account
-- Join this [discord server](https://discord.gg/e5u7wujE) to use the bot.
+- Join this [discord server](https://discord.gg/JbMjNTBBma) to use the bot.
 - Click [here](#usage) for usage instructions
 
 Discord Server:
